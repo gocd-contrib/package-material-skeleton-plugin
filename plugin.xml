@@ -16,14 +16,14 @@
   ~
   -->
 
-<go-plugin id="skeletonPoller" version="1">
+<go-plugin id="package-material-skeleton" version="1">
     <about>
-        <name>Skeleton Plugin</name>
+        <name>Package Material Skeleton</name>
         <version>1.0.0</version>
         <target-go-version>15.3.0</target-go-version>
-        <description>Skeleton plugin description</description>
+        <description>Skeleten for a JSON-message based package material plugin</description>
         <vendor>
-            <name>Skeleton: Your team name here</name>
+            <name>Skeleton Team</name>
             <url>www.skeleton.com</url>
         </vendor>
     </about>
