@@ -3,7 +3,7 @@
 Skeleton for a package material plugin with gradle. Since every package management tool works a little bit differently, it won't work out of the box.
 
 Development Process:
-* Documentation on package material plugins can be found [here](https://developer.go.cd/current/writing_go_plugins/package_material/json_message_based_package_material_extension.html)
+* Documentation on package material plugins can be found [here](https://docs.gocd.org/current/extension_points/package_repository_extension.html) and [here](https://plugin-api.gocd.org/current/package-repo/)
 * Everywhere you need to update will contain the word "skeleton," either in the code or in a comment in the relevant section -- we've just put in placeholder notes for guidance, but the implementation's up to you!
   * We also use "skeleton" to indicate custom fields (e.g. ```SKELETON_USERNAME``` in case you want to support a private repository)
 
