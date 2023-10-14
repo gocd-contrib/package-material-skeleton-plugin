@@ -21,13 +21,13 @@ package plugin.go.skeleton.e2e;
 import com.google.gson.GsonBuilder;
 import com.thoughtworks.go.plugin.api.request.GoPluginApiRequest;
 import com.thoughtworks.go.plugin.api.response.GoPluginApiResponse;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import plugin.go.skeleton.SkeletonController;
 
 import java.util.Map;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static utils.Constants.REPOSITORY_CONFIGURATION;
@@ -39,7 +39,7 @@ public class NugetPluginTest {
     GoPluginApiRequest goApiPluginRequest;
 
 
-    @Before
+    @BeforeEach
     public void setUp() {
         skeletonController = new SkeletonController();
         goApiPluginRequest = mock(GoPluginApiRequest.class);
@@ -58,7 +58,7 @@ public class NugetPluginTest {
         GoPluginApiResponse response = skeletonController.handle(goApiPluginRequest);
         Map responseBodyMap = (Map) new GsonBuilder().create().fromJson(response.responseBody(), Object.class);
 
-        Assert.assertEquals(SUCCESS_RESPONSE_CODE, response.responseCode());
-        Assert.assertEquals(expectedRepositoryConfigurationMap, responseBodyMap);
+        assertEquals(SUCCESS_RESPONSE_CODE, response.responseCode());
+        assertEquals(expectedRepositoryConfigurationMap, responseBodyMap);
     }
 }

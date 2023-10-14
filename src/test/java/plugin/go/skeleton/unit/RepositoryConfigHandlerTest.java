@@ -17,8 +17,8 @@
 
 package plugin.go.skeleton.unit;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import plugin.go.skeleton.ConnectionHandler;
 import plugin.go.skeleton.RepositoryConfigHandler;
 
@@ -33,7 +33,7 @@ public class RepositoryConfigHandlerTest {
     RepositoryConfigHandler repositoryConfigHandler;
     ConnectionHandler connectionHandler;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         connectionHandler = mock(ConnectionHandler.class);
         repositoryConfigHandler = new RepositoryConfigHandler(connectionHandler);

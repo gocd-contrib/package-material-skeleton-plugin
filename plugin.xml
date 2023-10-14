@@ -21,7 +21,7 @@
         <name>Package Material Skeleton</name>
         <version>1.0.0</version>
         <target-go-version>15.3.0</target-go-version>
-        <description>Skeleten for a JSON-message based package material plugin</description>
+        <description>Skeleton for a JSON-message based package material plugin</description>
         <vendor>
             <name>Skeleton Team</name>
             <url>www.skeleton.com</url>
