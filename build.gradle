@@ -43,8 +43,8 @@ ext {
 }
 
 dependencies {
-    implementation group: 'cd.go.plugin.base', name: 'gocd-plugin-base', version: '1.0.1'
     compileOnly project.deps.gocdPluginApi
+    implementation group: 'cd.go.plugin.base', name: 'gocd-plugin-base', version: '1.0.2'
 
     testImplementation platform('org.junit:junit-bom:5.12.1')
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api'
