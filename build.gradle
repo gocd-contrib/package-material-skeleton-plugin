@@ -46,7 +46,7 @@ dependencies {
     compileOnly project.deps.gocdPluginApi
     implementation group: 'cd.go.plugin.base', name: 'gocd-plugin-base', version: '1.0.2'
 
-    testImplementation platform('org.junit:junit-bom:5.12.1')
+    testImplementation platform('org.junit:junit-bom:5.12.2')
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params'
     testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
