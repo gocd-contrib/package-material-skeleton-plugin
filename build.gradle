@@ -36,7 +36,7 @@ static String versionOf(String dependencySpec) {
 
 ext {
     deps = [
-            gocdPluginApi: 'cd.go.plugin:go-plugin-api:25.2.0',
+            gocdPluginApi: 'cd.go.plugin:go-plugin-api:25.3.0',
     ]
 
     versions = project.ext.deps.collectEntries { lib, libGav -> [lib, versionOf(libGav)] }
@@ -44,15 +44,15 @@ ext {
 
 dependencies {
     compileOnly project.deps.gocdPluginApi
-    implementation group: 'cd.go.plugin.base', name: 'gocd-plugin-base', version: '1.0.4'
+    implementation group: 'cd.go.plugin.base', name: 'gocd-plugin-base', version: '1.0.5'
 
     testImplementation platform('org.junit:junit-bom:5.13.4')
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api'
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params'
     testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
     testRuntimeOnly group: 'org.junit.platform', name: 'junit-platform-launcher'
-    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.27.3'
-    testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.18.0'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.27.4'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.19.0'
     testImplementation project.deps.gocdPluginApi
 }
 
