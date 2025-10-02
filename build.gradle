@@ -15,7 +15,9 @@
  *
  */
 
-apply plugin: 'java'
+plugins {
+  id 'java'
+}
 
 group = 'com.thoughtworks.go.package'
 version = '1.0-SNAPSHOT'
