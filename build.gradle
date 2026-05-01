@@ -49,7 +49,7 @@ ext {
 
 dependencies {
     compileOnly project.deps.gocdPluginApi
-    implementation 'cd.go.plugin.base:gocd-plugin-base:2.0.0'
+    implementation 'cd.go.plugin.base:gocd-plugin-base:2.0.1'
 
     testImplementation platform('org.junit:junit-bom:6.0.3')
     testImplementation 'org.junit.jupiter:junit-jupiter-api'
